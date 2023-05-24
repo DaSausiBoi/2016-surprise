@@ -14,7 +14,7 @@ public class ShootCommand extends CommandBase{
     
     @Override
     public void execute() {
-        Shooter.setShooterSpeed(-0.7);
+        Shooter.setShooterSpeed(-1);
     }
 
     @Override

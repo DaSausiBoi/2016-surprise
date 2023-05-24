@@ -14,7 +14,7 @@ public class IntakeInCommand extends CommandBase{
 
     @Override
     public void execute() {
-        Intake.setIntakeSpeed(0.35);
+        Intake.setIntakeSpeed(0.5);
     }
 
     @Override
