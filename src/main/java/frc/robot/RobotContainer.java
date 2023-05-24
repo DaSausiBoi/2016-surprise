@@ -30,8 +30,8 @@ public class RobotContainer {
       m_drivetrain.setDefaultCommand(
         new SetDrivetrain(
           m_drivetrain, 
-          () -> -driverController.getLeftY(), 
-          () -> -driverController.getRightX()));
+          () -> driverController.getRightX(), 
+          () -> driverController.getLeftY()));
     }
 
     public RobotContainer() {
@@ -40,9 +40,9 @@ public class RobotContainer {
       }
 
     private void configureButtonBindings() {
-      driverController.a().whileTrue(intakeIn);
-      driverController.y().whileTrue(intakeOut);
+      driverController2.a().whileTrue(intakeIn);
+      driverController2.y().whileTrue(intakeOut);
 
-      driverController2.rightBumper().whileTrue(shootCommand);
+      driverController.rightBumper().whileTrue(shootCommand);
     }
 }

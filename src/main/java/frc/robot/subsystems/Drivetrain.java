@@ -10,9 +10,9 @@ import static frc.robot.Constants.*;
 
 public class Drivetrain extends SubsystemBase{
     private final WPI_TalonSRX leftLeader = new WPI_TalonSRX(CanIdConstants.LEFT_LEADER_ID);
-    private final WPI_TalonSRX rightLeader = new WPI_TalonSRX(CanIdConstants.RIGHT_LEADER_ID);
-    private final WPI_VictorSPX leftFollower = new WPI_VictorSPX(CanIdConstants.LEFT_FOLLOWER_ID);
-    private final WPI_VictorSPX rightFollower = new WPI_VictorSPX(CanIdConstants.RIGHT_FOLLOWER_ID);
+    private final WPI_VictorSPX rightLeader = new WPI_VictorSPX(CanIdConstants.RIGHT_LEADER_ID);
+    private final WPI_TalonSRX leftFollower = new WPI_TalonSRX(CanIdConstants.LEFT_FOLLOWER_ID);
+    private final WPI_TalonSRX rightFollower = new WPI_TalonSRX(CanIdConstants.RIGHT_FOLLOWER_ID);
 
     private final DifferentialDrive differentialDrive = new DifferentialDrive(leftLeader, rightLeader);
   
